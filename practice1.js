@@ -2,30 +2,22 @@
 console.log("==========================");
 console.log("Show List Of Stock Items");
 console.log("==========================");
-const stationary = {
-  name: "Pencil",
-  stock: 0,
-};
-const Book = {
-  name: "Sidu",
-  stock: 10,
-};
-const Electronic = {
-  name: "Mouse",
-  stock: 3,
-};
-const KitchenSet = {
-  name: "Plate",
+
+let stationary = {
+  nama: "Pencil",
   stock: 20,
 };
-// looping too showing the inside data
-for (stationary = 0; stationary <= Object.length; stationary++) {
-  console.log;
-}
 
-console.log(`List Item Stationary ${stationary.name}`);
-console.log(`List Item Book ${Book.name}`);
-console.log(`List Item Electronic ${Electronic.name}`);
-console.log(`List Item Kitchen Set ${KitchenSet.name}`);
-// let [firstitems] = item1;
-// console.log(firstitems);
+// console.log(`Stock item Stationary ${stationary.nama} = ${stationary.stock}`);
+
+const stock = (name, stock) => {
+  if (stock == 0) {
+    return `Stock item Stationary = ${name} was empty!`;
+  } else if (stock < 5) {
+    return `Stock item Stationary = ${name} less!`;
+  } else {
+    return `Stock item Stationary = ${name} still many`;
+  }
+};
+let checkStock = stock("Pencil", 0);
+console.log(checkStock);
