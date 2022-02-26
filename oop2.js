@@ -23,7 +23,8 @@ class WhatsApp extends Mail {
     } Account`;
   }
 }
-const wa1 = new WhatsApp(0015545124);
+// const wa1 = new WhatsApp(0015545124);
+const wa1 = new WhatsApp("Ragnala", true, 0892212391);
 console.log(wa1.myProfile());
 
 console.log("=================================================");
