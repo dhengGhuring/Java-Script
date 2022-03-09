@@ -26,5 +26,6 @@ class Player extends Character {
 }
 const player1 = new Player('Wyvren', 100, 350);
 console.log(Character);
+console.log(player1);
 console.log(player1.move());
 console.log(player1.fight());
